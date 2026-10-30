@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alojate en Salto Grande · Alojamientos junto al río en Salto, Uruguay</title>
+<meta name="google-site-verification" content="sX50-aYfGk0NMQ3GdOG902AdjthJfdX0-fBe0nwVdu8" />
+<meta name="description" content="Guía de alojamientos en Salto Grande, Salto, Uruguay. Casas y cabañas junto al río Uruguay para pescar, ir en familia o descansar. Contacto directo con cada dueño.">
+<meta name="keywords" content="alojamiento Salto Grande, cabañas Salto Uruguay, casas de alquiler Salto Grande, pesca Salto Grande, dónde quedarse en Salto">
+<link rel="canonical" href="https://alojateensaltogrande.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alojate en Salto Grande">
+<meta property="og:description" content="Casas y cabañas junto al río Uruguay. Contacto directo con cada dueño.">
+<meta property="og:image" content="https://alojateensaltogrande.github.io/img/lago-atardecer.jpg">
+<meta property="og:url" content="https://alojateensaltogrande.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
+<style>
+/* Look claro con la sección de la zona en oscuro. Layout: estilo campo y naturaleza (tipo Hipcamp). Arena de fondo, verde eucalipto de marca, marrón tierra y naranja atardecer como detalle; fotos grandes y sans robusta. */
+:root{
+  --bg:#F7F4EE; --paper:#FFFFFF; --soft:#E7EBE1; --celeste:#D3DACB; --line:#E2DDD2;
+  --ink:#1E261F; --muted:#5E655C; --blue:#33543F; --blue-hover:#26412F; --sky:#B85E2C; --earth:#7A5A3A;
+  --serif:'Outfit', 'Trebuchet MS', system-ui, sans-serif;
+  --sans:'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --r:14px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--bg)}
+a{color:var(--blue)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;text-wrap:balance;letter-spacing:-.025em;line-height:1.05}
+h1 em,h2 em{font-style:normal;color:var(--sky)}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.label{margin:0;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--earth)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:600 15px var(--sans);text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.btn-blue{background:var(--blue);color:#FFFFFF}
+.btn-blue:hover{background:var(--blue-hover)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:var(--ink)}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+.arrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;color:var(--blue);transition:gap .2s ease}
+.arrow:hover{gap:12px}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;line-height:1;text-decoration:none;color:var(--ink)}
+.brand .logo{width:40px;height:40px;flex:none}
+.bt{display:flex;flex-direction:column}
+.bt span:first-child{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.bt span:last-child{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-.02em;margin-top:3px}
+.nav{display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500}
+.nav a{color:var(--ink);text-decoration:none}
+.nav a:not(.btn):hover{color:var(--blue)}
+.nav .btn{min-height:42px;padding:0 18px;color:#FFFFFF}
+@media (max-width:820px){.nav .hide-sm{display:none}}
+
+.hero{position:relative;overflow:hidden;padding-block:96px 0}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{min-height:470px;display:flex;align-items:center}
+.hero-grid > div{max-width:min(500px,44%)}
+.hero h1{font-size:clamp(46px,6vw,84px);line-height:1;margin-top:18px}
+.hero h1 em{color:var(--sky)}
+.hero p.intro{font-size:19px;color:var(--muted);max-width:440px;margin:26px 0 34px}
+.hero-photo{position:absolute;top:0;right:0;width:64%;height:640px;margin:0;z-index:0}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 55%;display:block;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 42%),linear-gradient(to bottom,#000 62%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent 0%,#000 42%),linear-gradient(to bottom,#000 62%,transparent 100%);
+  mask-composite:intersect}
+@media (max-width:880px){
+  .hero{padding-block:0}
+  .hero-photo{position:relative;width:100%;height:360px}
+  .hero-photo img{-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 100%);mask-image:linear-gradient(to bottom,#000 55%,transparent 100%)}
+  .hero .wrap{margin-top:-60px}
+  .hero-grid{min-height:0}
+  .hero-grid > div{max-width:none}
+}
+.search{margin-top:40px}
+.search form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;align-items:stretch;border:1px solid var(--line);border-radius:999px;background:var(--paper);box-shadow:0 10px 30px rgba(15,34,56,.06);padding:6px}
+.search label{display:flex;flex-direction:column;justify-content:center;padding:8px 24px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border-right:1px solid var(--line)}
+.search label:nth-child(3){border-right:0}
+.search select{border:0;background:transparent;font:600 16px var(--sans);color:var(--ink);padding:2px 0;margin-left:-3px;letter-spacing:0;text-transform:none}
+.search .btn{min-height:58px;padding:0 34px}
+@media (max-width:760px){.search form{grid-template-columns:1fr;border-radius:22px;padding:10px;gap:4px}.search label{border-right:0;border-bottom:1px solid var(--line);padding:10px 14px}.search label:nth-child(3){border-bottom:0}}
+
+.section{padding-block:120px 0}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 48px;margin-bottom:48px}
+.head h2{font-size:clamp(34px,4.2vw,52px);margin-top:12px}
+.head p{margin:0;max-width:380px;color:var(--muted)}
+
+.trips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+@media (max-width:980px){.trips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.trips{grid-template-columns:1fr}}
+.trip{appearance:none;border:0;background:transparent;padding:0;text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;gap:14px}
+.trip{padding:28px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line);transition:border-color .2s ease,transform .2s ease}
+.trip:hover{border-color:var(--blue)}
+.trip .ph{width:60px;height:60px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+.trip .ph svg{width:32px;height:32px;fill:none;stroke:var(--blue);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.trip[aria-pressed="true"]{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue)}
+.trip h3{font-size:24px}
+.trip p{margin:-6px 0 0;color:var(--muted);font-size:15px;max-width:30ch}
+
+
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;border-block:1px solid var(--line);margin-bottom:40px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:0 16px;border-radius:999px;font:500 14px var(--sans);cursor:pointer;background:transparent;color:var(--ink);border:1px solid var(--line);transition:all .15s ease}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--blue);color:#FFFFFF;border-color:var(--blue)}
+.bar-right{display:flex;align-items:center;gap:18px;font-size:14px;color:var(--muted)}
+.bar-right select{border:0;background:transparent;font:600 14px var(--sans);color:var(--ink)}
+.more{border:0;background:transparent;font:600 14px var(--sans);color:var(--blue);cursor:pointer;min-height:40px;padding:0}
+.extra{display:flex;flex-direction:column;gap:10px;width:100%;padding-top:8px}
+
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}
+@media (max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.grid{grid-template-columns:1fr}}
+.card{display:flex;flex-direction:column;gap:16px;text-decoration:none;color:inherit}
+.card .ph{overflow:hidden;border-radius:var(--r);aspect-ratio:4/3;background:var(--soft)}
+.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover img{transform:scale(1.04)}
+.card .loc{font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.card h3{font-size:25px;margin-top:6px}
+.card .meta{margin:6px 0 0;color:var(--muted);font-size:15px}
+.card .fits{margin:4px 0 0;font-size:14px}
+.card .fits span{color:var(--muted)}
+.join-card{border-radius:var(--r);background:var(--soft);padding:36px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.join-card h3{font-size:27px;margin-top:12px}
+.join-card p{margin:0;color:var(--muted)}
+.none{grid-column:1 / -1;padding:56px 24px;text-align:center;border-radius:var(--r);background:var(--soft)}
+.none p{font-family:var(--serif);font-weight:600;font-size:24px;margin:0 0 18px}
+.count{font-size:14px;color:var(--muted);margin:-24px 0 32px}
+
+.zone{--bg:#131813;--paper:#1A201A;--soft:#1E261F;--celeste:#2C362C;--line:#2B332B;--ink:#EEEDE6;--muted:#A9AFA4;--sky:#E39A6B;--earth:#C9A57F;background:#131813;color:var(--ink);margin-top:120px}
+.zone .wrap{padding-block:110px}
+.zone-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:center}
+.zone h2{font-size:clamp(34px,4.4vw,56px);margin:12px 0 22px}
+.zone .txt p{color:var(--muted);margin:0 0 16px;max-width:46ch}
+.zone-pics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.zone figure{margin:0}
+.zone figure img{width:100%;border-radius:var(--r);display:block;object-fit:cover;aspect-ratio:3/4}
+.zone .f2{margin-top:72px}
+.zone .f2 img{object-position:55% center}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:32px;padding-top:28px;border-top:1px solid var(--celeste)}
+.facts b{display:block;font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.2}
+.facts span{font-size:14px;color:var(--muted)}
+@media (max-width:900px){.zone-grid{grid-template-columns:1fr;gap:40px}.zone .f2{margin-top:40px}}
+
+.owners{padding-block:120px}
+.owners-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px;align-items:start}
+.owners h2{font-size:clamp(34px,4.4vw,56px);margin:12px 0 22px}
+.owners .intro{color:var(--muted);max-width:46ch;margin:0 0 36px;font-size:17px}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:16px;padding-block:20px;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps b{font-family:var(--serif);font-weight:600;font-size:24px;color:var(--sky);line-height:1}
+.steps strong{display:block;font-weight:600}
+.steps span{color:var(--muted);font-size:15px}
+.form{background:#33543F;color:#FFFFFF;border-radius:20px;padding:40px;display:grid;gap:16px}
+.form h3{font-size:28px;color:#FFFFFF}
+.form p{margin:0;color:rgba(255,255,255,.82);font-size:15px}
+.form label{display:grid;gap:8px;font-size:13px;font-weight:600;color:rgba(255,255,255,.88)}
+.form input{height:52px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#FFFFFF;font:500 16px var(--sans);padding:0 16px}
+.form input::placeholder{color:rgba(255,255,255,.6)}
+.form .btn{background:#FFFFFF;color:#0F2238;margin-top:6px}
+.form .ok{color:#FFFFFF;font-weight:600}
+@media (max-width:900px){.owners-grid{grid-template-columns:1fr;gap:40px}}
+
+footer{border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-block:44px}
+footer .bt span:last-child{font-size:20px}
+footer p{margin:10px 0 0;max-width:520px}
+
+.f-top{padding-block:36px 32px}
+.back{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;text-decoration:none;font-size:15px}
+.f-top h1{font-size:clamp(42px,6vw,76px);margin-top:10px}
+.f-top .sub{margin:12px 0 0;color:var(--muted);font-size:18px}
+.f-top .label{margin-top:24px}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:240px 240px;gap:10px;position:relative}
+.gallery button{border:0;padding:0;cursor:zoom-in;background:var(--soft);overflow:hidden}
+.gallery button:first-child{grid-column:span 2;grid-row:span 2;border-radius:var(--r) 0 0 var(--r)}
+.gallery button:nth-child(3){border-top-right-radius:var(--r)}
+.gallery button:nth-child(5){border-bottom-right-radius:var(--r)}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.gallery button:hover img{transform:scale(1.03)}
+.gallery .all{position:absolute;right:16px;bottom:16px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:999px;cursor:pointer}
+@media (max-width:700px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:220px 130px}.gallery button:first-child{grid-column:span 2;grid-row:span 1;border-radius:var(--r) var(--r) 0 0}.gallery button:nth-child(n+4):not(.all){display:none}.gallery button:nth-child(2){border-bottom-left-radius:var(--r)}.gallery button:nth-child(3){border-radius:0 0 var(--r) 0}}
+.f-body{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:72px;align-items:start;padding-block:64px 120px}
+@media (max-width:920px){.f-body{grid-template-columns:1fr;gap:48px}}
+.f-main{display:flex;flex-direction:column;gap:56px;min-width:0}
+.f-main h2{font-size:28px;margin-bottom:16px}
+.f-main p{margin:0;color:var(--muted);font-size:17px;line-height:1.75;max-width:62ch}
+.keyfacts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line)}
+.keyfacts div{padding:22px 0}
+.keyfacts b{display:block;font-family:var(--serif);font-weight:600;font-size:34px;line-height:1}
+.keyfacts span{font-size:14px;color:var(--muted)}
+@media (max-width:520px){.keyfacts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ideal{display:flex;flex-wrap:wrap;gap:10px}
+.ideal span{border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:14px;font-weight:500}
+.amen{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.amen li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center}
+.amen svg{flex:none;stroke:var(--blue)}
+@media (max-width:560px){.amen{grid-template-columns:1fr}}
+.rooms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 20px}
+@media (max-width:700px){.rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rooms figure{margin:0}
+.rooms img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;display:block}
+.rooms figcaption{margin-top:10px;font-weight:600;font-size:15px}
+.rooms figcaption span{display:block;font-weight:400;color:var(--muted);font-size:14px;line-height:1.45;margin-top:2px}
+.route{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:28px;align-items:start}
+.route img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r);display:block}
+.route > div{display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+@media (max-width:600px){.route{grid-template-columns:1fr}.route img{aspect-ratio:4/3}}
+.times{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.times div{border-top:1px solid var(--line);padding-top:16px}
+.times small{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.times strong{font-family:var(--serif);font-weight:600;font-size:24px}
+.box{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px);border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:14px;background:var(--paper);box-shadow:0 18px 50px rgba(15,34,56,.08)}
+@media (max-width:920px){.box{position:static}}
+.box h3{font-size:27px}
+.box > p{margin:0;color:var(--muted);font-size:15px}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+.contact small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.contact b{font-weight:600;user-select:all}
+.copy{border:0;background:transparent;color:var(--blue);font:600 14px var(--sans);cursor:pointer;min-height:44px}
+.box .btn{width:100%}
+.wa-go{background:#25A85A;color:#FFFFFF}
+.wa-go:hover{background:#1E8E4B}
+.fine{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+.lb{position:fixed;inset:0;z-index:60;background:rgba(8,16,26,.94);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-height:84vh;max-width:100%;border-radius:10px}
+.lb button{position:absolute;width:52px;height:52px;border-radius:999px;border:0;background:#FFFFFF;color:#0F2238;font:500 22px var(--sans);cursor:pointer}
+.lb .x{top:calc(18px + env(safe-area-inset-top,0px));right:calc(18px + env(safe-area-inset-right,0px))}
+.lb .prev{left:calc(18px + env(safe-area-inset-left,0px))}
+.lb .next{right:calc(18px + env(safe-area-inset-right,0px))}
+.lb .cap{position:absolute;bottom:calc(22px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;color:#FFFFFF;font-size:14px;margin:0}
+
+/* qué hacer */
+.todo{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+@media (max-width:1000px){.todo{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.todo{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.todo article{border-radius:var(--r);background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
+.todo-ph{height:130px;background:var(--soft);overflow:hidden}
+.todo-ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.todo article:hover .todo-ph img{transform:scale(1.04)}
+.todo-ph.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--muted);font-size:13px}
+.todo-ph.empty .ic{background:var(--paper)}
+.ic{width:52px;height:52px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center}
+.ic svg{width:26px;height:26px;fill:none;stroke:var(--blue);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.todo-body{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.todo h3{font-size:19px}
+.todo p{margin:0;color:var(--muted);font-size:14px;flex:1}
+.todo .arrow{font-size:14px}
+/* guías */
+.guides-band{background:var(--soft);margin-top:120px}
+.guides-band .wrap{padding-block:100px}
+.guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.guide{background:var(--paper);border-radius:var(--r);padding:26px;border:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.guide h3{font-size:22px}
+.guide .meta{margin:0;color:var(--muted);font-size:15px}
+.guide .tags{display:flex;flex-wrap:wrap;gap:6px}
+.guide .tags span{font-size:13px;padding:5px 11px;border-radius:999px;background:var(--soft)}
+.guide .contact{margin-top:auto}
+.guides-note{margin:28px 0 0;color:var(--muted);font-size:15px}
+/* faq */
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);font-weight:400;font-size:26px;color:var(--blue);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 22px;color:var(--muted);max-width:64ch}
+/* whatsapp flotante */
+.wa{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:35;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.wa-btn{width:60px;height:60px;border-radius:50%;border:0;background:#25A85A;color:#FFFFFF;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.2)}
+.wa-btn svg{width:30px;height:30px}
+.wa-panel{width:min(300px,calc(100vw - 40px));background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 18px 50px rgba(0,0,0,.15);display:flex;flex-direction:column;gap:12px}
+.wa-panel h3{font-size:21px}
+.wa-panel p{margin:0;color:var(--muted);font-size:14px}
+.wa-panel .btn{background:#25A85A;color:#FFFFFF;width:100%}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><path d="M11 21a9 9 0 0 1 18 0" fill="none" stroke="var(--sky)" stroke-width="2.4" stroke-linecap="round"/><path d="M6 27c3-2 6-2 9.3 0s6.3 2 9.4 0 6.3-2 9.3 0" fill="none" stroke="var(--blue)" stroke-width="2.4" stroke-linecap="round"/></svg><span class="bt"><span>Alojate en</span><span>Salto Grande</span></span></a>
+    <nav class="nav" aria-label="Principal">
+      <a class="hide-sm" href="#alojamientos">Alojamientos</a>
+      <a class="hide-sm" href="#que-hacer">Qué hacer</a>
+      <a class="hide-sm" href="#pesca">Pesca</a>
+      <a class="hide-sm" href="#preguntas">Preguntas</a>
+      <a class="btn btn-blue" href="#sumate">Sumá tu alojamiento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero" id="inicio">
+    <figure class="hero-photo">
+      <img src="img/lago-atardecer.jpg" alt="Atardecer sobre el río Uruguay en Salto Grande">
+    </figure>
+    <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="label">Guía de alojamientos · Salto, Uruguay</p>
+        <h1>Quedate cerca<br>del <em>río</em></h1>
+        <p class="intro">Casas y cabañas en la zona de Salto Grande, con contacto directo con cada dueño. Para pescar, ir en familia o simplemente descansar.</p>
+        <a class="btn btn-blue" href="#alojamientos">Ver alojamientos</a>
+      </div>
+    </div>
+    <div class="search">
+      <form id="searchForm" aria-label="Buscar alojamiento">
+        <label for="qTrip">Viajo para
+          <select id="qTrip"><option value="">Cualquier plan</option><option value="pesca">Pescar</option><option value="familia">Ir en familia</option><option value="descanso">Descansar</option><option value="mascotas">Ir con mi mascota</option></select>
+        </label>
+        <label for="qPeople">Somos
+          <select id="qPeople"><option value="0">Cualquier cantidad</option><option value="2">2 o más</option><option value="4">4 o más</option><option value="6">6 o más</option><option value="8">8 o más</option></select>
+        </label>
+        <label for="qType">Tipo
+          <select id="qType"><option value="">Todos</option><option>Casa</option><option>Cabaña</option><option>Apartamento</option><option>Hotel o posada</option><option>Camping</option></select>
+        </label>
+        <button class="btn btn-blue" type="submit">Buscar</button>
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="viajes">
+    <div class="head">
+      <div><p class="label">Tu viaje</p><h2>¿A qué venís?</h2></div>
+      <p>Elegí tu plan y te mostramos los alojamientos que mejor le quedan.</p>
+    </div>
+    <div class="trips">
+      <button type="button" class="trip" data-trip="pesca" aria-pressed="false">
+        <div class="ph"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M14 4v24a6 6 0 0 1-12 0" /><path d="M14 4l18 14" /><path d="M32 18v6" /><circle cx="32" cy="26" r="2"/></svg></div>
+        <h3>A pescar</h3><p>Cerca del agua y con lugar para guardar lo que saques.</p>
+      </button>
+      <button type="button" class="trip" data-trip="familia" aria-pressed="false">
+        <div class="ph"><svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="11" cy="9" r="3.5"/><circle cx="25" cy="9" r="3.5"/><circle cx="18" cy="18" r="2.5"/><path d="M5 32v-8a6 6 0 0 1 12 0"/><path d="M19 32v-8a6 6 0 0 1 12 0"/><path d="M14 32v-4a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>En familia</h3><p>Pasto para correr, parrillero y espacio para todos.</p>
+      </button>
+      <button type="button" class="trip" data-trip="descanso" aria-pressed="false">
+        <div class="ph"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M4 6v26M32 6v26"/><path d="M4 12c4 8 24 8 28 0"/><path d="M15 3a4.5 4.5 0 1 0 6 6 3.6 3.6 0 0 1-6-6z"/></svg></div>
+        <h3>A descansar</h3><p>Silencio, naturaleza y atardeceres sobre el río.</p>
+      </button>
+      <button type="button" class="trip" data-trip="mascotas" aria-pressed="false">
+        <div class="ph"><svg viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="18" cy="24" rx="7" ry="6"/><circle cx="8" cy="15" r="3"/><circle cx="14" cy="9" r="3"/><circle cx="22" cy="9" r="3"/><circle cx="28" cy="15" r="3"/></svg></div>
+        <h3>Con tu perro</h3><p>Lugares donde tu mascota también es bienvenida.</p>
+      </button>
+    </div>
+  </section>
+
+  <section class="wrap section" id="alojamientos">
+    <div class="head">
+      <div><p class="label">Dónde quedarse</p><h2>Alojamientos</h2></div>
+      <p>La información la provee cada dueño. La reserva se coordina directo con ellos.</p>
+    </div>
+    <div class="bar">
+      <div class="chips" id="fTrip"></div>
+      <div class="bar-right">
+        <button type="button" class="more" id="moreBtn" aria-expanded="false" aria-controls="extra">Más filtros</button>
+        <label for="sort">Ordenar
+          <select id="sort"><option value="rec">Recomendados</option><option value="cap">Mayor capacidad</option><option value="az">Nombre A–Z</option></select>
+        </label>
+      </div>
+      <div class="extra" id="extra" hidden>
+        <div class="chips" id="fPeople"></div>
+        <div class="chips" id="fAmen"></div>
+      </div>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="zone" id="zona">
+    <div class="wrap">
+      <div class="zone-grid">
+        <div class="txt">
+          <p class="label">La zona</p>
+          <h2>Entre el río <em>y la represa</em></h2>
+          <p>La Represa de Salto Grande une Uruguay y Argentina sobre el río Uruguay, el río que le da vida a toda la zona. De día es costa, pesca y naturaleza. Al caer el sol, el cielo cambia de color sobre el agua y de noche la represa se ilumina.</p>
+          <p>Está a solo 20 minutos del centro de Salto y es uno de los mejores lugares del país para pescar: en el río se sacan dorados, bogas y otras especies, y muchos pescadores salen temprano desde la costa o en lancha.</p>
+          <p>También podés recorrer la represa (consultá por las visitas guiadas), disfrutar de las playas y la costa del río, y terminar el día mirando el atardecer sobre el agua. Muy cerca están el Parque del Lago, ideal para deportes acuáticos, y el parque acuático, para pasar un rato divertido en sus juegos.</p>
+          <p>En la zona hay un restaurante y un almacén, así que no hace falta traer todo desde la ciudad.</p>
+          <div class="facts">
+            <div><b>Pesca</b><span>En el río Uruguay</span></div>
+            <div><b>Naturaleza</b><span>Costas y parques</span></div>
+            <div><b>Atardeceres</b><span>Sobre el agua</span></div>
+            <div><b>Cerca</b><span>A minutos de Salto</span></div>
+          </div>
+        </div>
+        <div class="zone-pics">
+        <figure class="f1"><img src="img/represa-atardecer.jpg" alt="La represa de Salto Grande al atardecer, con botes de pesca"></figure>
+        <figure class="f2"><img src="img/represa-noche.jpg" alt="La represa iluminada de noche sobre el agua"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="que-hacer">
+    <div class="head">
+      <div><p class="label">Qué hacer</p><h2>Planes en Salto Grande</h2></div>
+      <p>Estos son los planes cerca de los alojamientos. En el centro de Salto, a 20 minutos, hay muchas opciones más.</p>
+    </div>
+    <div class="todo">
+      <article><div class="todo-ph"><img src="img/represa-noche.jpg" alt="La represa de Salto Grande iluminada de noche" loading="lazy"></div><div class="todo-body"><h3>La represa</h3><p>Una obra binacional sobre el río Uruguay. Consultá por las visitas guiadas.</p><a class="arrow" href="https://maps.google.com/?q=Represa+de+Salto+Grande" target="_blank" rel="noopener">Cómo llegar →</a></div></article>
+      <article><div class="todo-ph"><img src="img/zona-parque-lago.jpg" alt="Vista aérea del Parque del Lago con sus playas sobre el agua" loading="lazy"></div><div class="todo-body"><h3>Parque del Lago</h3><p>Ideal para deportes acuáticos y para pasar el día al aire libre.</p><a class="arrow" href="https://maps.google.com/?q=Parque+del+Lago+Salto+Uruguay" target="_blank" rel="noopener">Cómo llegar →</a></div></article>
+      <article><div class="todo-ph"><img src="img/zona-acuatico.jpg" alt="Piscinas y juegos de agua del parque acuático" loading="lazy"></div><div class="todo-body"><h3>Parque acuático</h3><p>Juegos de agua para pasar un rato divertido, sobre todo con chicos.</p><a class="arrow" href="https://maps.google.com/?q=Parque+acuático+Salto+Grande" target="_blank" rel="noopener">Cómo llegar →</a></div></article>
+      <article><div class="todo-ph"><img src="img/lago-atardecer.jpg" alt="Atardecer sobre el río Uruguay" loading="lazy"></div><div class="todo-body"><h3>Playas y atardeceres</h3><p>La costa del río para bañarse, tomar mate y mirar caer el sol sobre el agua.</p><a class="arrow" href="https://maps.google.com/?q=Salto+Grande+costa+río+Uruguay" target="_blank" rel="noopener">Cómo llegar →</a></div></article>
+      <article><div class="todo-ph"><img src="img/zona-pesca.jpg" alt="Pescador recogiendo la red desde un bote al amanecer" loading="lazy"></div><div class="todo-body"><h3>Pesca</h3><p>Dorados, bogas y más. Salidas desde la costa o en lancha con guías locales.</p><a class="arrow" href="#pesca">Ver guías de pesca →</a></div></article>
+    </div>
+  </section>
+
+  <section class="guides-band" id="pesca">
+    <div class="wrap">
+      <div class="head">
+        <div><p class="label">Para pescadores</p><h2>Guías de pesca</h2></div>
+        <p>Pescadores de la zona que conocen el río y te llevan a los mejores lugares.</p>
+      </div>
+      <div class="guides">
+      <article class="guide">
+        <h3>[Nombre del guía]</h3>
+        <p class="meta">Sale desde [lugar]</p>
+        <div class="tags"><span>[Dorado]</span><span>[Embarcado / costa]</span></div>
+        <div class="contact"><div><small>WhatsApp</small><b>[número]</b></div></div>
+      </article>
+      <article class="guide">
+        <h3>[Nombre del guía]</h3>
+        <p class="meta">Sale desde [lugar]</p>
+        <div class="tags"><span>[Dorado]</span><span>[Embarcado / costa]</span></div>
+        <div class="contact"><div><small>WhatsApp</small><b>[número]</b></div></div>
+      </article>
+      <article class="guide">
+        <h3>[Nombre del guía]</h3>
+        <p class="meta">Sale desde [lugar]</p>
+        <div class="tags"><span>[Dorado]</span><span>[Embarcado / costa]</span></div>
+        <div class="contact"><div><small>WhatsApp</small><b>[número]</b></div></div>
+      </article>
+      </div>
+      <p class="guides-note">¿Sos guía de pesca en Salto Grande? <a href="#sumate">Escribinos para aparecer acá.</a></p>
+    </div>
+  </section>
+
+  <section class="wrap section" id="preguntas">
+    <div class="head">
+      <div><p class="label">Preguntas frecuentes</p><h2>Antes de venir</h2></div>
+    </div>
+    <div class="faq">
+      <details><summary>¿Puedo reservar desde esta web?</summary><p>No. Alojate en Salto Grande es una guía informativa: te mostramos las opciones y vos contactás directo a cada alojamiento para consultar y reservar.</p></details>
+      <details><summary>¿Cómo pago la estadía?</summary><p>El pago se coordina directamente con el dueño de cada alojamiento. La web no cobra ni gestiona pagos.</p></details>
+      <details><summary>¿Cómo sé si hay disponibilidad?</summary><p>Escribile al alojamiento con tus fechas y la cantidad de personas, usando los datos de contacto de su ficha.</p></details>
+      <details><summary>¿Puedo ir con mi mascota?</summary><p>Depende de cada alojamiento. Usá el filtro "Con mascota" para ver los que la aceptan.</p></details>
+      <details><summary>¿La información está actualizada?</summary><p>Cada dueño nos pasa sus datos. Si ves algo desactualizado, avisanos por WhatsApp y lo corregimos.</p></details>
+      <details><summary>Tengo un alojamiento en la zona, ¿cómo lo sumo?</summary><p>Completá el formulario de "Sumá tu alojamiento" más abajo y te contactamos para armar tu ficha.</p></details>
+    </div>
+  </section>
+
+  <section class="wrap owners" id="sumate">
+    <div class="owners-grid">
+      <div>
+        <p class="label">Para dueños</p>
+        <h2>¿Tenés un lugar en <em>Salto Grande?</em></h2>
+        <p class="intro">Sumalo a la guía. Vos nos pasás la información y nosotros armamos tu ficha. Los turistas te contactan directo a vos.</p>
+        <ol class="steps">
+          <li><b>1</b><div><strong>Mandanos tus datos</strong><span>Fotos, capacidad, comodidades y contacto.</span></div></li>
+          <li><b>2</b><div><strong>Armamos tu ficha</strong><span>La revisás y la publicamos en la guía.</span></div></li>
+          <li><b>3</b><div><strong>Te escriben a vos</strong><span>La reserva la arreglás directamente con el turista.</span></div></li>
+        </ol>
+      </div>
+      <form class="form" id="joinForm">
+        <h3>Sumá tu alojamiento</h3>
+        <p>Dejanos tus datos y te contactamos.</p>
+        <label for="jName">Nombre del alojamiento<input id="jName" required placeholder="Ej.: Cabañas del Río"></label>
+        <label for="jContact">WhatsApp o email<input id="jContact" required placeholder="099 123 456"></label>
+        <label for="jZone">Zona o ubicación<input id="jZone" placeholder="Ej.: Parque José Luis"></label>
+        <a class="btn" id="joinSend" href="https://wa.me/59891962104" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        <p class="ok" id="joinOk" hidden>Completá el nombre del alojamiento y tu contacto para enviar.</p>
+        <p style="font-size:13px">Se abre WhatsApp con tus datos listos para enviar.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<main id="detail" hidden></main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#inicio"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><path d="M11 21a9 9 0 0 1 18 0" fill="none" stroke="var(--sky)" stroke-width="2.4" stroke-linecap="round"/><path d="M6 27c3-2 6-2 9.3 0s6.3 2 9.4 0 6.3-2 9.3 0" fill="none" stroke="var(--blue)" stroke-width="2.4" stroke-linecap="round"/></svg><span class="bt"><span>Alojate en</span><span>Salto Grande</span></span></a>
+      <p>Guía informativa de alojamientos. No gestiona reservas ni pagos: el acuerdo se hace directamente con cada alojamiento.</p>
+    </div>
+    <div><p>[email de contacto]</p><p style="margin-top:4px">[Instagram]</p></div>
+  </div>
+</footer>
+
+
+<div class="wa">
+  <div class="wa-panel" id="waPanel" hidden>
+    <h3>¿Te ayudamos?</h3>
+    <p>Escribinos si no encontrás lo que buscás o tenés dudas sobre la zona.</p>
+    <div class="contact"><div><small>WhatsApp</small><b id="waNum">091 962 104</b></div><button type="button" class="copy" id="waCopy">Copiar</button></div>
+    <a class="btn" href="https://wa.me/59891962104?text=%C2%A1Hola!%20Te%20escribo%20desde%20Alojate%20en%20Salto%20Grande." target="_blank" rel="noopener">Abrir WhatsApp</a>
+  </div>
+  <button type="button" class="wa-btn" id="waBtn" aria-label="Escribinos por WhatsApp" aria-expanded="false" aria-controls="waPanel">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>
+  </button>
+</div>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Fotos">
+  <img id="lbImg" alt="">
+  <button class="x" type="button" id="lbX" aria-label="Cerrar">✕</button>
+  <button class="prev" type="button" id="lbPrev" aria-label="Foto anterior">‹</button>
+  <button class="next" type="button" id="lbNext" aria-label="Foto siguiente">›</button>
+  <p class="cap" id="lbCap"></p>
+</div>
+
+<script>
+const TRIPS = [['','Todos'],['pesca','Pesca'],['familia','Familia'],['descanso','Descanso'],['mascotas','Con mascota']];
+const AMEN = [['rio','Cerca del río'],['freezer','Freezer'],['lancha','Lugar para lancha'],['parrillero','Parrillero'],['jardin','Jardín'],['aire','Aire acondicionado'],['wifi','WiFi'],['ropa','Ropa de cama']];
+const PEOPLE = [[0,'Cualquier cantidad'],[2,'2+ personas'],[4,'4+ personas'],[6,'6+ personas'],[8,'8+ personas']];
+
+let LISTINGS = [{
+  id:'the-chicken-ranch', name:'The Chicken Ranch', type:'Casa', typeLabel:'Casa de campo', zone:'Parque José Luis',
+  tagline:'Naturaleza, descanso y tranquilidad junto a Salto Grande',
+  cap:7, rooms:2, beds:6, baths:1,
+  trips:['pesca','familia','descanso','mascotas'],
+  amen:['rio','freezer','parrillero','jardin','mascotas','aire','wifi','ropa'],
+  about:'Casa de campo en el Parque José Luis, sobre la zona de Salto Grande, ideal para descansar en familia o con amigos. Rodeada de naturaleza y tranquilidad, a unos pasos del río. Tiene un living amplio con estufa a leña y vista al jardín, cocina completa con barra desayunadora y dos parrilleros techados integrados a la galería. Al lado hay un almacén para lo que necesites.',
+  amenList:['A unos pasos del río','2 parrilleros techados','Heladera con freezer','Jardín amplio','Se permiten mascotas','Aire acondicionado en todos los ambientes','Estufa a leña','Cocina completa','WiFi','TV prepaga','Ropa de cama incluida','Almacén al lado'],
+  checkin:'Desde las 12:00', checkout:'Antes de las 10:00',
+  directions:'Si venís por la ruta, al doblar en el camino de tierra vas a ver unos carteles blancos de un almacén que indican cómo llegar; la casa está justo al lado. También se puede entrar por la parte de atrás, a través de un portón.',
+  routeImg:'img/como-llegar.jpg',
+  maps:'https://maps.google.com/maps?q=-31.28912353515625%2C-57.94209289550781&z=17&hl=es',
+  airbnb:'https://airbnb.com/h/thechickenranchsaltouruguay',
+  phone:'091 962 104', wa:'59891962104', instagram:'casaenalquiler_saltogrande',
+  photos:[
+    ['img/cr-01.jpg','Exterior y galería techada'],['img/cr-04.jpg','Living'],['img/cr-06.jpg','Living'],
+    ['img/cr-07.jpg','Comedor'],['img/cr-05.jpg','Estufa a leña'],['img/cr-11.jpg','Parrillero interior'],
+    ['img/cr-12.jpg','Cocina y barra'],['img/cr-09.jpg','Cocina'],['img/cr-08.jpg','Cocina'],
+    ['img/cr-13.jpg','Dormitorio'],['img/cr-14.jpg','Dormitorio'],['img/cr-15.jpg','Baño'],
+    ['img/cr-10.jpg','Parrillero techado'],['img/cr-02.jpg','Jardín'],['img/cr-03.jpg','Jardín']
+  ],
+  spaces:[
+    ['img/cr-04.jpg','Living y estar','Amplio y luminoso, con estufa a leña y vista al jardín.'],
+    ['img/cr-07.jpg','Comedor','Mesa de madera para toda la familia.'],
+    ['img/cr-08.jpg','Cocina','Completa, con heladera con freezer y barra desayunadora.'],
+    ['img/cr-10.jpg','Parrilleros','Dos parrilleros techados con mesada y bacha.'],
+    ['img/cr-13.jpg','Dormitorios','Dos dormitorios con aire acondicionado.'],
+    ['img/cr-15.jpg','Baño','Completo, con ducha y calefón.']
+  ]
+}];
+
+/* ===== Planilla de Google =====
+   Pegá entre las comillas el link de tu planilla publicada como CSV
+   (Archivo > Compartir > Publicar en la web > CSV). Si queda vacío, se usan los datos de arriba. */
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT5-WI3U7gTvM8-QDke_afNbA9Rsn37be7GHLSM78Pn4-XVxb-_Q8PlTAmVvICTKw/pub?gid=1733940719&single=true&output=csv';
+
+function parseCSV(text){
+  const rows=[]; let row=[], f='', q=false;
+  for (let i=0;i<text.length;i++){
+    const c=text[i];
+    if (q){ if (c=='"'){ if (text[i+1]=='"'){ f+='"'; i++; } else q=false; } else f+=c; }
+    else if (c=='"') q=true;
+    else if (c==','){ row.push(f); f=''; }
+    else if (c=='\n'||c=='\r'){ if (c=='\r'&&text[i+1]=='\n') i++; row.push(f); rows.push(row); row=[]; f=''; }
+    else f+=c;
+  }
+  if (f!==''||row.length){ row.push(f); rows.push(row); }
+  return rows.filter(r=>r.some(x=>x.trim()!==''));
+}
+const norm = t => String(t||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim().replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');
+const list = t => String(t||'').split(/[,\n]/).map(x=>x.trim()).filter(Boolean);
+const yes = t => /^(si|sí|s|x|1|true|yes)$/i.test(String(t||'').trim());
+const img = t => { t=String(t||'').trim(); if(!t) return ''; const m=t.match(/drive\.google\.com\/(?:file\/d\/|open\?id=|uc\?id=)([\w-]+)/); if(m) return 'https://lh3.googleusercontent.com/d/'+m[1]; return /^https?:/.test(t)?t:'img/'+t; };
+const waNum = t => { let d=String(t||'').replace(/\D/g,''); if(!d) return ''; if(d.startsWith('598')) return d; if(d.startsWith('0')) d=d.slice(1); return '598'+d; };
+const TRIP_KEYS = {pesca:'pesca',pescar:'pesca',familia:'familia',descanso:'descanso',descansar:'descanso',mascota:'mascotas',mascotas:'mascotas',perro:'mascotas'};
+const AMEN_COLS = {cerca_del_rio:'rio',freezer:'freezer',lugar_para_lancha:'lancha',parrillero:'parrillero',jardin:'jardin',admite_mascotas:'mascotas',aire_acondicionado:'aire',wifi:'wifi',ropa_de_cama:'ropa'};
+function rowToListing(h, r){
+  const g = k => (r[h.indexOf(k)]||'').trim();
+  const name = g('nombre'); if (!name) return null;
+  if (h.includes('visible') && g('visible') && !yes(g('visible'))) return null;
+  const photos = list(g('fotos')).map((f,i)=>[img(f), name+' · foto '+(i+1)]);
+  const spaces = g('espacios').split(/\n|;/).map(x=>x.split('|').map(y=>y.trim())).filter(x=>x[0]).map(x=>[img(x[0]),x[1]||'',x[2]||'']);
+  const amen = Object.keys(AMEN_COLS).filter(k=>yes(g(k))).map(k=>AMEN_COLS[k]);
+  let trips = [...new Set(list(g('ideal_para')).map(t=>TRIP_KEYS[norm(t)]).filter(Boolean))];
+  if (amen.includes('mascotas') && !trips.includes('mascotas')) trips.push('mascotas');
+  const ig = g('instagram').replace(/^@/,'').replace(/^https?:\/\/(www\.)?instagram\.com\//,'').replace(/\/.*$/,'');
+  return {
+    id: norm(g('id')||name).replace(/_/g,'-'), name, type: g('tipo')||'Casa', typeLabel: g('tipo_detalle')||g('tipo')||'Alojamiento',
+    zone: g('zona'), tagline: g('frase_corta'), cap: +g('personas')||0, rooms: +g('dormitorios')||0, beds: +g('camas')||0, baths: +g('banos')||0,
+    trips, amen, about: g('descripcion'), amenList: list(g('comodidades')), checkin: g('check_in'), checkout: g('check_out'),
+    directions: g('como_llegar'), routeImg: img(g('foto_como_llegar')), maps: g('link_google_maps'), airbnb: g('link_reservas'),
+    phone: g('whatsapp_o_telefono'), wa: waNum(g('whatsapp_o_telefono')), email: g('email'), instagram: ig,
+    photos: photos.length ? photos : [['', name]], spaces, order: +g('orden')||999
+  };
+}
+async function loadSheet(){
+  if (!SHEET_CSV_URL) return;
+  try {
+    const res = await fetch(SHEET_CSV_URL, {cache:'no-store'});
+    if (!res.ok) throw new Error(res.status);
+    const rows = parseCSV(await res.text());
+    const h = rows[0].map(norm);
+    const items = rows.slice(1).map(r=>rowToListing(h,r)).filter(Boolean).sort((a,b)=>a.order-b.order);
+    if (items.length){ LISTINGS = items; render(); route(); loadSheet(); }
+  } catch(e){ console.warn('No se pudo leer la planilla; se muestran los datos guardados.', e); }
+}
+
+const tripLabel = id => ({pesca:'Pesca',familia:'Familia',descanso:'Descanso',mascotas:'Con mascota'})[id]||'';
+
+const st = { trip:'', people:0, type:'', amen:new Set(), sort:'rec' };
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const check = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+const pin = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
+
+function chips(el, items, isOn, onClick){
+  el.innerHTML = items.map(([v,l]) => `<button type="button" class="chip" data-v="${v}" aria-pressed="${isOn(String(v))}">${esc(l)}</button>`).join('');
+  el.querySelectorAll('.chip').forEach(b => b.onclick = () => { onClick(b.dataset.v); render(); });
+}
+function render(){
+  chips($('fTrip'), TRIPS, v => v===st.trip, v => { st.trip = v; });
+  chips($('fPeople'), PEOPLE, v => +v===st.people, v => { st.people=+v; });
+  chips($('fAmen'), AMEN, v => st.amen.has(v), v => { st.amen.has(v) ? st.amen.delete(v) : st.amen.add(v); });
+  $('qTrip').value = st.trip; $('qPeople').value = String(st.people); $('qType').value = st.type;
+  document.querySelectorAll('.trip').forEach(c => c.setAttribute('aria-pressed', String(c.dataset.trip===st.trip)));
+  let res = LISTINGS.filter(l => l.cap>=st.people && (!st.type||l.type===st.type) && (!st.trip||l.trips.includes(st.trip)) && [...st.amen].every(a=>l.amen.includes(a)));
+  if (st.sort==='cap') res.sort((a,b)=>b.cap-a.cap);
+  if (st.sort==='az') res.sort((a,b)=>a.name.localeCompare(b.name));
+  const cards = res.map(l => `
+    <a class="card" href="#${l.id}">
+      <div class="ph"><img src="${l.photos[0][0]}" alt="${esc(l.photos[0][1])} de ${esc(l.name)}" loading="lazy"></div>
+      <div>
+        <span class="loc">${pin}${esc(l.zone)} · ${esc(l.typeLabel)}</span>
+        <h3>${esc(l.name)}</h3>
+        <p class="meta">${[l.cap?`Hasta ${l.cap} personas`:'', l.rooms?`${l.rooms} ${l.rooms==1?'dormitorio':'dormitorios'}`:'', l.baths?`${l.baths} ${l.baths==1?'baño':'baños'}`:''].filter(Boolean).join(' · ')}</p>
+        <p class="fits"><span>Ideal para </span>${l.trips.map(tripLabel).join(', ').toLowerCase()}</p>
+      </div>
+      <span class="arrow">Ver alojamiento →</span>
+    </a>`).join('');
+  const join = `
+    <div class="join-card">
+      <div><p class="label">Próximamente</p><h3>Más alojamientos de la zona</h3></div>
+      <p>Estamos sumando casas, cabañas y posadas de Salto Grande. ¿Tenés una?</p>
+      <a class="arrow" href="#sumate">Sumá tu alojamiento →</a>
+    </div>`;
+  $('grid').innerHTML = res.length ? cards + join : `<div class="none"><p>Todavía no hay alojamientos con esos filtros.</p><button class="btn btn-line" type="button" id="clear2">Ver todos</button></div>`;
+  const c2 = $('clear2'); if (c2) c2.onclick = clearAll;
+  $('count').textContent = `${res.length} ${res.length===1?'alojamiento':'alojamientos'}`;
+}
+function clearAll(){ st.trip=''; st.people=0; st.type=''; st.amen.clear(); render(); }
+$('moreBtn').onclick = () => { const x=$('extra'); x.hidden=!x.hidden; $('moreBtn').setAttribute('aria-expanded', String(!x.hidden)); $('moreBtn').textContent = x.hidden ? 'Más filtros' : 'Menos filtros'; };
+$('sort').onchange = e => { st.sort = e.target.value; render(); };
+$('searchForm').onsubmit = e => { e.preventDefault(); st.trip=$('qTrip').value; st.people=+$('qPeople').value; st.type=$('qType').value; render(); $('alojamientos').scrollIntoView(); };
+document.querySelectorAll('.trip').forEach(c => c.onclick = () => { st.trip = c.dataset.trip; render(); $('alojamientos').scrollIntoView(); });
+function joinHref(){ const n=$('jName').value.trim(), c=$('jContact').value.trim(), z=$('jZone').value.trim();
+  const t='¡Hola! Quiero sumar mi alojamiento a Alojate en Salto Grande.\nAlojamiento: '+(n||'-')+'\nContacto: '+(c||'-')+(z?'\nZona: '+z:'');
+  $('joinSend').href='https://wa.me/59891962104?text='+encodeURIComponent(t); return n && c; }
+['jName','jContact','jZone'].forEach(id => $(id).addEventListener('input', () => { joinHref(); $('joinOk').hidden=true; }));
+$('joinSend').addEventListener('click', e => { if(!joinHref()){ e.preventDefault(); $('joinOk').hidden=false; } });
+$('joinForm').onsubmit = e => { e.preventDefault(); if(joinHref()) $('joinSend').click(); };
+joinHref();
+
+let lbList = [], lbIdx = 0, lastFocus = null;
+function openLb(list, i){ lastFocus=document.activeElement; lbList=list; lbIdx=i; showLb(); $('lb').hidden=false; $('lbX').focus(); }
+function closeLb(){ $('lb').hidden=true; if(lastFocus) lastFocus.focus(); }
+function showLb(){ const [src,cap]=lbList[lbIdx]; $('lbImg').src=src; $('lbImg').alt=cap; $('lbCap').textContent=`${cap} · ${lbIdx+1} de ${lbList.length}`; }
+$('lbX').onclick = closeLb;
+$('lbPrev').onclick = () => { lbIdx=(lbIdx-1+lbList.length)%lbList.length; showLb(); };
+$('lbNext').onclick = () => { lbIdx=(lbIdx+1)%lbList.length; showLb(); };
+$('lb').addEventListener('keydown', e => { if(e.key==='Escape') closeLb(); if(e.key==='ArrowLeft') $('lbPrev').click(); if(e.key==='ArrowRight') $('lbNext').click(); });
+
+function detail(l){
+  $('detail').innerHTML = `
+  <div class="wrap">
+    <div class="f-top">
+      <a class="back" href="#alojamientos">← Volver a alojamientos</a>
+      <p class="label">${esc(l.typeLabel)} · ${esc(l.zone)}</p>
+      <h1>${esc(l.name)}</h1>
+      <p class="sub">${esc(l.tagline)}</p>
+    </div>
+    <div class="gallery">
+      ${l.photos.slice(0,5).map((p,i)=>`<button type="button" data-i="${i}" aria-label="Ver foto: ${esc(p[1])}"><img src="${p[0]}" alt="${esc(p[1])}"></button>`).join('')}
+      <button type="button" class="btn all" data-i="0">Ver las ${l.photos.length} fotos</button>
+    </div>
+    <div class="f-body">
+      <div class="f-main">
+        <div class="keyfacts">${l.cap?`<div><b>${l.cap}</b><span>personas</span></div>`:''}${l.rooms?`<div><b>${l.rooms}</b><span>${l.rooms==1?'dormitorio':'dormitorios'}</span></div>`:''}${l.beds?`<div><b>${l.beds}</b><span>${l.beds==1?'cama':'camas'}</span></div>`:''}${l.baths?`<div><b>${l.baths}</b><span>${l.baths==1?'baño':'baños'}</span></div>`:''}</div>
+        ${l.about?`<section><h2>Sobre el alojamiento</h2><p>${esc(l.about)}</p></section>`:''}
+        ${l.trips.length?`<section><h2>Ideal para</h2><div class="ideal">${l.trips.map(t=>`<span>${esc(tripLabel(t))}</span>`).join('')}</div></section>`:''}
+        ${l.spaces.length?`<section><h2>Los espacios</h2><div class="rooms">${l.spaces.map(s=>`<figure><img src="${s[0]}" alt="${esc(s[1])}" loading="lazy"><figcaption>${esc(s[1])}<span>${esc(s[2])}</span></figcaption></figure>`).join('')}</div></section>`:''}
+        ${l.amenList.length?`<section><h2>Comodidades</h2><ul class="amen">${l.amenList.map(a=>`<li>${check}${esc(a)}</li>`).join('')}</ul></section>`:''}
+        ${(l.checkin||l.checkout)?`<section class="times">${l.checkin?`<div><small>Check-in</small><strong>${esc(l.checkin)}</strong></div>`:''}${l.checkout?`<div><small>Check-out</small><strong>${esc(l.checkout)}</strong></div>`:''}</section>`:''}
+        ${(l.directions||l.maps||l.routeImg)?`<section><h2>Cómo llegar</h2>
+          <div class="route" style="${l.routeImg?'':'grid-template-columns:1fr'}">
+            ${l.routeImg?`<img src="${l.routeImg}" alt="Cómo llegar a ${esc(l.name)}" loading="lazy">`:''}
+            <div>${l.directions?`<p>${esc(l.directions)}</p>`:''}${l.maps?`<a class="btn btn-blue" href="${l.maps}" target="_blank" rel="noopener">Abrir en Google Maps</a>`:''}</div>
+          </div></section>`:''}
+      </div>
+      <aside class="box" aria-label="Contacto">
+        <h3>Contactá al dueño</h3>
+        <p>Escribile con tus fechas y cuántos son. Te confirma disponibilidad y condiciones.</p>
+        ${l.wa?`<a class="btn wa-go" href="https://wa.me/${l.wa}?text=${encodeURIComponent('¡Hola! Vi ' + l.name + ' en Alojate en Salto Grande y quería consultar disponibilidad para las fechas [ ] para [ ] personas.')}" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <p class="fine" style="margin-top:-4px">Se abre WhatsApp con un mensaje listo para enviar.</p>`:''}
+        ${l.phone?`<div class="contact"><div><small>WhatsApp o teléfono</small><b>${esc(l.phone)}</b></div><button type="button" class="copy" data-copy="${esc(l.phone.replace(/ /g,''))}">Copiar</button></div>`:''}
+        ${l.email?`<div class="contact"><div><small>Email</small><b>${esc(l.email)}</b></div><button type="button" class="copy" data-copy="${esc(l.email)}">Copiar</button></div>`:''}
+        ${l.instagram?`<div class="contact"><div><small>Instagram</small><b>@${esc(l.instagram)}</b></div><a class="copy" style="display:inline-flex;align-items:center;text-decoration:none" href="https://www.instagram.com/${esc(l.instagram)}/" target="_blank" rel="noopener">Abrir</a></div>`:''}
+        ${l.airbnb?`<a class="btn btn-blue" href="${l.airbnb}" target="_blank" rel="noopener">${/airbnb/i.test(l.airbnb)?'Ver en Airbnb':(/booking/i.test(l.airbnb)?'Ver en Booking':'Ver más información')}</a>`:''}
+        <p class="fine">La reserva y el pago se coordinan directamente con el alojamiento. Información provista por el dueño.</p>
+      </aside>
+    </div>
+  </div>`;
+  const d = $('detail');
+  d.querySelectorAll('[data-i]').forEach(b => b.onclick = () => openLb(l.photos, +b.dataset.i));
+  d.querySelectorAll('[data-copy]').forEach(b => b.onclick = () => {
+    navigator.clipboard.writeText(b.dataset.copy).then(()=>{ b.textContent='Copiado'; }).catch(()=>{
+      const r=document.createRange(); r.selectNodeContents(b.previousElementSibling.querySelector('b')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); });
+  });
+}
+function route(){
+  const h = location.hash.slice(1);
+  const l = LISTINGS.find(x=>x.id===h);
+  $('home').hidden = !!l; $('detail').hidden = !l;
+  if (l){ detail(l); document.title = l.name + ' · Alojate en Salto Grande'; window.scrollTo(0,0); }
+  else { document.title = 'Alojate en Salto Grande'; if (h){ const t=document.getElementById(h); if(t) t.scrollIntoView(); } }
+}
+
+$('waBtn').onclick = () => { const pn=$('waPanel'); pn.hidden=!pn.hidden; $('waBtn').setAttribute('aria-expanded', String(!pn.hidden)); };
+$('waCopy').onclick = (e) => { const t=$('waNum').textContent.replace(/ /g,''); navigator.clipboard.writeText(t).then(()=>{ e.target.textContent='Copiado'; }).catch(()=>{ const r=document.createRange(); r.selectNodeContents($('waNum')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }); };
+window.addEventListener('hashchange', route);
+render(); route();
+</script>
+
+</body>
+</html>
