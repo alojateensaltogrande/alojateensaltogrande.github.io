@@ -427,7 +427,7 @@ footer p{margin:10px 0 0;max-width:520px}
         <div><p class="label">Para pescadores</p><h2>Guías de pesca</h2></div>
         <p>Pescadores de la zona que conocen el río y te llevan a los mejores lugares.</p>
       </div>
-      <div class="guides">
+      <div class="guides" id="guidesList">
       <article class="guide">
         <h3>[Nombre del guía]</h3>
         <p class="meta">Sale desde [lugar]</p>
@@ -603,6 +603,36 @@ function rowToListing(h, r){
     photos: photos.length ? photos : [['', name]], spaces, order: +g('orden')||999
   };
 }
+/* ===== Guías de pesca (pestaña "Guías" de la planilla) =====
+   Pegá entre las comillas el link CSV de la pestaña Guías (Publicar en la web > hoja Guías > CSV). */
+const GUIAS_CSV_URL = '';
+function renderGuides(list){
+  const box = document.getElementById('guidesList'); if (!box || !list.length) return;
+  box.innerHTML = list.map(g => `
+      <article class="guide">
+        <h3>${esc(g.name)}</h3>
+        ${g.from?`<p class="meta">Sale desde ${esc(g.from)}</p>`:''}
+        ${g.tags.length?`<div class="tags">${g.tags.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`:''}
+        ${g.about?`<p class="meta">${esc(g.about)}</p>`:''}
+        ${g.phone?`<div class="contact"><div><small>WhatsApp</small><b>${esc(g.phone)}</b></div>${g.wa?`<a class="copy" style="display:inline-flex;align-items:center;text-decoration:none" href="https://wa.me/${g.wa}?text=${encodeURIComponent('¡Hola! Te vi en Alojate en Salto Grande y quería consultar por una salida de pesca.')}" target="_blank" rel="noopener">Escribir</a>`:''}</div>`:''}
+        ${g.instagram?`<div class="contact"><div><small>Instagram</small><b>@${esc(g.instagram)}</b></div><a class="copy" style="display:inline-flex;align-items:center;text-decoration:none" href="https://www.instagram.com/${esc(g.instagram)}/" target="_blank" rel="noopener">Abrir</a></div>`:''}
+      </article>`).join('');
+}
+async function loadGuides(){
+  if (!GUIAS_CSV_URL) return;
+  try {
+    const res = await fetch(GUIAS_CSV_URL, {cache:'no-store'}); if (!res.ok) throw new Error(res.status);
+    const rows = parseCSV(await res.text()); const h = rows[0].map(norm);
+    const g = (r,k) => (r[h.indexOf(k)]||'').trim();
+    const list = rows.slice(1).filter(r => g(r,'nombre') && (!h.includes('visible') || !g(r,'visible') || yes(g(r,'visible'))))
+      .map(r => ({ name:g(r,'nombre'), from:g(r,'sale_desde'), tags:[...list_(g(r,'especies')), ...list_(g(r,'modalidad'))],
+        about:g(r,'descripcion'), phone:g(r,'whatsapp_o_telefono'), wa:waNum(g(r,'whatsapp_o_telefono')),
+        instagram:g(r,'instagram').replace(/^@/,'').replace(/^https?:\/\/(www\.)?instagram\.com\//,'').replace(/\/.*$/,'') }));
+    renderGuides(list);
+  } catch(e){ console.warn('No se pudo leer la pestaña de guías.', e); }
+}
+function list_(t){ return String(t||'').split(/[,\n]/).map(x=>x.trim()).filter(Boolean); }
+
 async function loadSheet(){
   if (!SHEET_CSV_URL) return;
   try {
@@ -611,7 +641,7 @@ async function loadSheet(){
     const rows = parseCSV(await res.text());
     const h = rows[0].map(norm);
     const items = rows.slice(1).map(r=>rowToListing(h,r)).filter(Boolean).sort((a,b)=>a.order-b.order);
-    if (items.length){ LISTINGS = items; render(); route(); loadSheet(); }
+    if (items.length){ LISTINGS = items; render(); route(); }
   } catch(e){ console.warn('No se pudo leer la planilla; se muestran los datos guardados.', e); }
 }
 
@@ -737,7 +767,7 @@ function route(){
 $('waBtn').onclick = () => { const pn=$('waPanel'); pn.hidden=!pn.hidden; $('waBtn').setAttribute('aria-expanded', String(!pn.hidden)); };
 $('waCopy').onclick = (e) => { const t=$('waNum').textContent.replace(/ /g,''); navigator.clipboard.writeText(t).then(()=>{ e.target.textContent='Copiado'; }).catch(()=>{ const r=document.createRange(); r.selectNodeContents($('waNum')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }); };
 window.addEventListener('hashchange', route);
-render(); route();
+render(); route(); loadSheet(); loadGuides();
 </script>
 
 </body>
