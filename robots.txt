@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alojateensaltogrande.github.io/sitemap.xml
